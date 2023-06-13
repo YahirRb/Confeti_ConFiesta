@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Confeti</title>
+    <link rel="icon" href="../../Images/icon.png">
+    <link rel="stylesheet" href="../../Style/index.css">
+    <link rel="stylesheet" href="../../Style/cards.css">
+    <script src="https://kit.fontawesome.com/8e785e1f4e.js" crossorigin="anonymous"></script>
+    <script type="module" src="../../../Model/filtroBusqueda.js"></script>
+    <script type="module" src="/Model/Proveedor.js" ></script>
+</head>
+
+<body>
+    <div class="red">
+        <div id="instagram">
+          <a href="https://www.instagram.com/confeti_con_fiesta/" target="none" class="fa-brands fa-instagram"></a>
+        </div>
+        <div id="email">
+            <a href="mailto:confeti.confiesta00@gmail.com" target="none" class="fa-solid fa-envelope"></a>
+        </div>
+    </div>
+    
+    <input type="checkbox" id="check">
+    <nav>
+        <div class="icon"> 
+            <a href="main.html"> <img src="../../Images/logo.png" alt="Logo Confeti" width="100" height="70"> </a>
+            <a href="main.html"> <img src="../../Images/textNomEsl.png" alt="Confeti" width="280" height="60" id="imgLogo"> </a>
+        </div>
+
+        <div class="searchBox">
+            <div id="searchBar">
+                <input type="search" placeholder="Search here" id="search">
+                <span class="fa fa-search"></span>
+            </div>
+            <select id="suggestionsSearch" size="5">
+            </select>
+        </div>
+
+        <ol id="dropMenu">
+            <div class="userMenu">
+                <ul>
+                    <i class=></i>
+                    <li id="menu">Menú usuario <i class="fa fa-angle-down"></i>
+                        <ul>
+                            <li onclick="window.location='userProfile.html'">Mi perfil <span class="fa-solid fa-user"></span></li>
+                            <li id="ventas" onclick="window.location='ventas.html'">Mis ventas</li>
+                            <li id="verCarrito" onclick="window.location='carrito.html'">Ver carrito <span class="fa-solid fa-cart-shopping"></span></li>
+                            <li id="encargos" onclick="window.location='encargos.html'">Ver encargos</li>
+                            <li onclick="window.location='modifyPwd.html'">Cambiar contraseña</li>
+                            <li onclick="window.location='modifyEmail.html'">Cambiar correo</li>
+                            <li id="favoritos" onclick="window.location='favoritos.html'">Favoritos <span class="fa-solid fa-heart"></span></li>
+                            <li id="premium" onclick="window.location='premium.html'"> Plan premium <span class="fa-solid fa-crown" style="color: #dbad09;"></span></li>
+                            <li id="LogOut">Cerrar sesión <span class="fa-solid fa-right-from-bracket"></span></li>
+                        </ul>
+                   </li>
+                </ul>
+            </div>
+        </ol>
+        <ol id="listMenu">
+            <li id="Miperfil"><a href="userProfile.html">Mi perfil<span class="fa-solid fa-user"></span></a></span></li>
+            <li id="MisVentas"><a href="ventas.html">Mis ventas</a></li>
+            <li id="Carrito"><a href="carrito.html">Ver carrito<span class="fa-solid fa-cart-shopping"></span></a></li>
+            <li id="VerEncargos"><a href="encargos.html">Ver encargos</a></li>
+            <li id="CambiarPass"><a href="modifyPwd.html">Cambiar contraseña</a></li>
+            <li id="CambiarEmail"><a href="modifyEmail.html">Cambiar correo</a></li>
+            <li id="Favoritos"><a href="favoritos.html">Favoritos<span class="fa-solid fa-heart"></span></a></li>
+            <li id="premium"><a href="premium.html">Plan premium<span class="fa-solid fa-crown" style="color: #dbad09;"></span></a></li>
+            <li id="LogOut"><a href="">Cerrar sesión <span class="fa-solid fa-right-from-bracket"></span></a></li>
+        </ol>
+        <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+        </label>
+    </nav>
+    
+    <main>
+        <div class="titleCard">
+            <div class="eventName"><span class="fa-solid fa-cart-arrow-down"></span>Carrito</div>
+        </div>
+
+        <div class="column1" id="column1" name="column1">
+            <a href=""><h1 class="anuncio1" id="anuncio1">Anuncio 1</h1></a>
+        </div>
+
+        <div class="column2" id="column2" name="column2">
+            <a href=""><h1 class="anuncio2" id="anuncio2">Anuncio 2</h1></a>
+        </div>
+
+        <div class="content">
+            <div class="content1" id="contenidoIzq" name="contenidoIzq">
+                <div class="service-card" id="servicio01" name="servicio01" style="display: none;">
+                    <div class="meta">
+                    <div class="photo" id="imgServ" name="imgServ" style="background-image: url()"></div>
+                        <ul class="details">
+                            <li class="author" id="proveedor" name="proveedor" value="proveedor"> </li>
+                            <li class="date" id="precio" name="precio" value="precio"></li>
+                            <li class="tags">
+                                <ul>
+                                    <li id="tag1" name="tag1" value="tag1"> <a type="submit" href=""></a> </li>
+                                    <li id="tag2" name="tag2" value="tag2"> <a type="submit" href=""></a> </li>
+                                    <li id="tag3" name="tag3" value="tag3"> <a type="submit" href=""></a> </li>
+                                    <li id="tag4" name="tag4" value="tag4"> <a type="submit" href=""></a> </li>
+                                    <li id="tag5" name="tag5" value="tag5"> <a type="submit" href=""></a> </li>
+                                    <li id="tag6" name="tag6" value="tag6"> <a type="submit" href=""></a> </li>   
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h1 id="servName" name="servName" value="servName"> </h1>
+                        <span class="fa-sharp fa-solid fa-trash"></span>                        
+                        <h2 id="proveedor" name="proveedor" value="proveedor"> </h2>
+                        <p id="decripcion" name="decripcion" value="descripción"> </p>
+                        <p class="read-more">
+                            <a id="verMas" name="verMas" value="verMas" type="submit" href="">Ver más</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content2" id="contenidoDer" name="contenidoDer">
+                <div class="total"> <h2>Total a pagar: $</h2> <h2 id="pagar"></h2></div>  
+                <div class="total"> <button> Pagar</button></div>                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerSection">
+            <section class="confeti">
+                <img src="../../Images/logo.png" alt="Logo Confeti" width="100" height="70">
+                <section>
+                    <h3>Confeti con-Fiesta</h3>
+                    <p>Al servicio de tus eventos</p>
+                </section>
+            </section>
+            <section class="contact">
+                <h3>Medios de contacto:</h3>
+                <ul>
+                    <li> <span class="fa-brands fa-whatsapp"></span><a href="https://api.whatsapp.com/send?phone=+529212989328&text=Hola, Necesito mas informacion!" target="none">921-298-9328</a></li>
+                    <li> <span class="fa-solid fa-envelope"></span><a href="mailto:confeti.confiesta00@gmail.com" target="none"> confeti.confiesta00@gmail.com </a></li>
+                </ul>
+            </section>
+            <section class="aboutUs">
+                <h3>Presentación</h3>
+                <ul>
+                    <li><a href="aboutUs.html">Misión y Visión</a></li>
+                    <li><a href="aboutUs.html">Politicas de privacidad</a></li>
+                    <li><a href="aboutUs.html">Terminos y condiciones</a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

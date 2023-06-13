@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confeti</title>
+    <link rel="icon" href="../../Images/icon.png">
+    <link rel="stylesheet" href="../../Style/index.css">
+    <link rel="stylesheet" href="../../Style/registro.css">
+    <script src="https://kit.fontawesome.com/8e785e1f4e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script type="module" src="../../../Model/filtroBusqueda.js"></script>
+    <script type="module" src="../../../Controller/ControlProveedor.js"></script>
+    <script type="module" src="../../../Model/Proveedor.js"></script>
+    <script type="module" src="/Model/Usuario.js" ></script>
+    <title>Registro</title>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <nav>
+        <div class="icon"> 
+            <a href="main.html"> <img src="../../Images/logo.png" alt="Logo Confeti" width="100" height="70"> </a>
+            <a href="main.html"> <img src="../../Images/textNomEsl.png" alt="Confeti" width="280" height="60" id="imgLogo"> </a> 
+        </div>
+        <div class="searchBox">
+            <div id="searchBar">
+                <input type="search" placeholder="Search here" id="search">
+                <span class="fa fa-search"></span>
+            </div>
+            <select id="suggestionsSearch" size="5">
+            </select>
+        </div>
+        <ol id="dropMenu">
+            <div class="userMenu">
+                <ul>
+                    <i class=></i>
+                    <li>Menú usuario <i class="fa fa-angle-down"></i>
+                        <ul>
+                            <li onclick="location.href='userProfile.html'">Mi perfil <span class="fa-solid fa-user"></span></li>
+                            <li onclick="location.href='encargos.html'">Ver encargos</li>
+                            <li onclick="location.href='carrito.html'">Ver carrito <span class="fa-solid fa-cart-shopping"></span></li>
+                            <li onclick="location.href='modifyPwd.html'">Cambiar contraseña</li>
+                            <li onclick="location.href='modifyEmail.html'">Cambiar correo</li>
+                            <li onclick="location.href='volverseProveedor.html'">Volverse proveedor</li>
+                            <li onclick="location.href='favoritos.html'">Favoritos <span class="fa-solid fa-heart"></span></li>
+                            <li onclick="location.href='premium.html'"> Plan premium <span class="fa-solid fa-crown" style="color: #dbad09;"></span></li>
+                            <li id="LogOut">Cerrar sesión <span class="fa-solid fa-right-from-bracket"></span></li>
+                        </ul>
+                   </li>
+                </ul>
+            </div>
+        </ol>
+        <ol id="listMenu">
+            <li><a href="userProfile.html">Mi perfil<span class="fa-solid fa-user"></span></a></span></li>
+            <li><a href="encargos.html">Ver encargos</a></li>
+            <li><a href="carrito.html">Ver carrito<span class="fa-solid fa-cart-shopping"></span></a></li>
+            <li><a href="modifyPwd.html">Cambiar contraseña</a></li>
+            <li><a href="modifyEmail.html">Cambiar correo</a></li>
+            <li><a href="volverseProveedor.html">Volverse proveedor</a></li>
+            <li><a href="favoritos.html">Favoritos<span class="fa-solid fa-heart"></span></a></li>
+            <li><a href="premium.html">Plan premium<span class="fa-solid fa-crown" style="color: #dbad09;"></span></a></li>
+            <li id="LogOut"><a href="">Cerrar sesión <span class="fa-solid fa-right-from-bracket"></span></a></li>
+        </ol>
+        <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+        </label>
+    </nav>
+
+    <main>
+        <div class="content"> 
+            <div class="form">
+                <div class="form-header">
+                  <div class="text-header">Registro Proveedor</div>
+                </div>
+
+                <div class="form-body">
+                    <form action="#" id="convertProv" name="convertProv" method="post">
+                        <div class="elemento">
+                            <label for="tlefono">Número de teléfono*</label>
+                            <input required="true" class="form-control" name="telefono" id="telefono" type="tel">
+                        </div>
+                        <div class="elemento">
+                            <label for="empresa">Nombre de empresa</label>
+                            <input required="false" class="form-control" name="empresa" id="empresa" type="text">
+                        </div>
+                        <div class="elemento">
+                            <label for="direccion">Dirección*</label>
+                            <input required="true" class="form-control" name="direccion" id="direccion" type="text">
+                        </div>
+                        <div class="elemento">
+                            <label for="ciudad">Ciudad/Localidad*</label>
+                            <input required="true" class="form-control" name="ciudad" id="ciudad" type="text">
+                        </div>
+                        <div class="elemento">
+                            <label for="estado">Estado*</label>
+                            <input required="true" class="form-control" name="estado" id="estado" type="text">
+                        </div>
+                        <div class="elemento">
+                            <label for="tarjeta">Numero de tarjeta*</label>
+                            <input required="true" class="form-control" name="tarjeta" id="tarjeta" type="number">
+                        </div>
+                        <div class="elemento">
+                            <label for="paypal">PayPal*</label>
+                            <input required="true" class="form-control" name="paypal" id="paypal" type="email">
+                        </div>
+                    
+                        <div class="btnForm">
+                            <input type="submit" class="btnSignIn" value="Ser proveedor" id="btnSignIn">
+                        </div>
+                    </form>
+                </div>
+            </div>  
+        </div>
+    </main>
+  
+    <footer>
+        <div class="footerSection">
+            <section class="confeti">
+                <img src="../../Images/logo.png" alt="Logo Confeti" width="100" height="70">
+                <section>
+                    <h3>Confeti con-Fiesta</h3>
+                    <p>Al servicio de tus eventos</p>
+                </section>
+            </section>
+            <section class="contact">
+                <h3>Medios de contacto:</h3>
+                <ul>
+                    <li> <span class="fa-brands fa-whatsapp"></span><a href="https://api.whatsapp.com/send?phone=+529212989328&text=Hola, Necesito mas informacion!" target="none">921-298-9328</a></li>
+                    <li> <span class="fa-solid fa-envelope"></span><a href="mailto:confeti.confiesta00@gmail.com" target="none"> confeti.confiesta00@gmail.com </a></li>
+                </ul>
+            </section>
+            <section class="aboutUs">
+                <h3>Presentación</h3>
+                <ul>
+                    <li><a href="aboutUs.html">Misión y Visión</a></li>
+                    <li><a href="aboutUs.html">Politicas de privacidad</a></li>
+                    <li><a href="aboutUs.html">Terminos y condiciones</a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

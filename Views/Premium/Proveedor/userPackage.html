@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Confeti</title>
+    <link rel="icon" href="../../Images/iconLogo.ico">
+    <link rel="stylesheet" href="../../Style/index.css">
+    <link rel="stylesheet" href="../../Style/deatilService.css">
+    <link rel="stylesheet" href="../../Style/buttons.css">
+    <link rel="stylesheet" href="../../Style/cards.css">
+    <link rel="stylesheet" href="../../Style/userProfile.css">
+    <script src="https://kit.fontawesome.com/8e785e1f4e.js" crossorigin="anonymous"></script>
+    <script type="module" src="../../../Model/filtroBusqueda.js"></script>
+    <script type="module" src="../../../Model/Proveedor.js"></script>
+</head>
+
+<body>
+    <div class="red">
+        <div id="instagram">
+          <a href="https://www.instagram.com/confeti_con_fiesta/" target="none" class="fa-brands fa-instagram"></a>
+        </div>
+        <div id="email">
+            <a href="mailto:confeti.confiesta00@gmail.com" target="none" class="fa-solid fa-envelope"></a>
+          </div>
+    </div>
+    
+    <input type="checkbox" id="check">
+    <nav>
+        <div class="icon"> 
+            <a href="main.html"> <img src="../../Images/logo.png" alt="Logo Confeti" width="100" height="70"> </a>
+            <a href="main.html"> <img src="../../Images/textNomEsl.png" alt="Confeti" width="280" height="60" id="imgLogo"> </a>
+        </div>
+
+        <div class="searchBox">
+            <div id="searchBar">
+                <input type="search" placeholder="Search here" id="search">
+                <span class="fa fa-search"></span>
+            </div>
+            <select id="suggestionsSearch" size="5">
+            </select>
+        </div>
+
+        <div class="icon" id="premiumIcon"> 
+            <a href="premium.html"> <img id="imgPremium" src="../../Images/premium.png" alt="Logo Confeti" width="70" height="60"> </a>
+        </div>
+
+        <ol id="dropMenu">
+            <div class="userMenu">
+                <ul>
+                    <i class=></i>
+                    <li id="menu">Menú usuario <i class="fa fa-angle-down"></i>
+                        <ul>
+                            <li class="menuPremium" onclick="window.location='userProfile.html'">Mi perfil <span class="fa-solid fa-user" style="color: #dbb309;"></span></li>
+                            <li class="menuPremium" id="ventas">Mis ventas <span class="fa-sharp fa-solid fa-handshake-simple"></span></li>
+                            <li class="menuPremium" id="verCarrito">Ver carrito <span class="fa-solid fa-cart-shopping"></span></li>
+                            <li class="menuPremium" id="encargos">Ver encargos<span class="fa-sharp fa-solid fa-gifts"></span></li>
+                            <li class="menuPremium" onclick="window.location='modifyPwd.html'">Cambiar contraseña<span class="fa-sharp fa-solid fa-lock"></span></li>
+                            <li class="menuPremium" onclick="window.location='modifyEmail.html'">Cambiar correo<span class="fa-solid fa-envelope"></span></li>
+                            <li class="menuPremium" id="favoritos">Favoritos <span class="fa-solid fa-heart" style="color: red;"></span></li>
+                            <li class="menuPremium" id="LogOut">Cerrar sesión <span class="fa-solid fa-right-from-bracket"></span></li>
+                        </ul>
+                   </li>
+                </ul>
+            </div>
+        </ol>
+        <ol id="listMenu">
+            <li id="Miperfil"><a href="userProfile.html">Mi perfil<img src="../../Images/premium.png" alt="Logo Confeti" width="50" height="50"></a></li>
+            <li id="MisVentas"><a href="ventas.html">Mis ventas<span class="fa-sharp fa-solid fa-handshake-simple"></span></a></li>
+            <li id="Carrito"><a href="carrito.html">Ver carrito<span class="fa-solid fa-cart-shopping"></span></a></li>
+            <li id="VerEncargos"><a href="encargos.html">Ver encargos<span class="fa-solid fa-cart-shopping"></span></a></li>
+            <li id="CambiarPass"><a href="modifyPwd.html">Cambiar contraseña<span class="fa-sharp fa-solid fa-lock"></span></a></li>
+            <li id="CambiarEmail"><a href="modifyEmail.html">Cambiar correo<span class="fa-solid fa-envelope"></span></a></li>
+            <li id="Favoritos"><a href="favoritos.html">Favoritos<span class="fa-solid fa-heart" style="color: red;"></span></a></li>
+            <li id="LogOut"><a href="">Cerrar sesión <span class="fa-solid fa-right-from-bracket"></span></a></li>
+        </ol>
+        <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+        </label>
+    </nav>
+
+    <main>
+        <div class="column1" id="column1P" name="column1">
+            <a href=""><h1 class="anuncio1" id="anuncio1">Anuncio 1</h1></a>
+        </div>
+
+        <div class="column2" id="column2P" name="column2">
+            <a href=""><h1 class="anuncio2" id="anuncio2">Anuncio 2</h1></a>
+        </div>
+
+        <div class="content" id="contentP"> 
+            <div class="dataProv">
+                <div class="detailHead">
+                    <div class="perfilServ" id="perfilServ" name="perfilServ">
+                        <img src="">
+                    </div>
+
+                    <!--Rating-->
+                    <div class="rating">
+                        <label for="star-1">
+                            <input type="radio" id="star-1" name="star-radio" value="star-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <label for="star-2">
+                            <input type="radio" id="star-2" name="star-radio" value="star-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <label for="star-3">
+                            <input type="radio" id="star-3" name="star-radio" value="star-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <label for="star-4">
+                            <input type="radio" id="star-4" name="star-radio" value="star-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <label for="star-5">
+                            <input type="radio" id="star-5" name="star-radio" value="star-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                    </div>    
+               </div>
+
+                <div class="descPaq">
+                    <div id="paqueteHead">
+                        <h2 id="nombrePaquete" name="nombrePaquete">  </h2>
+                        <a href="" title="Editar" class="btnUser" type="submit" id="editServ" name="editServ"> 
+                            <span class="fa-solid fa-pen-to-square"></span>
+                        </a>
+                    </div>
+                    <div class="registro"> 
+                        <label for="descripcion">Descripcion del paquete</label>
+                        <p id="detailDescripcion" name="detailDescripcion">  </p>
+                        <label for="precio">Precio ($)</label>
+                        <h2 id="precioPaquete" name="precioPaquete"> </h2> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="servProvided">
+                <h1>Servicios</h1>
+                <div class="serviceBox" id="serviceBox" name="serviceBox">
+                    <div class="service-card" id="servicioProv" name="servicioProv" >
+                        <div class="meta">
+                        <div class="photo" id="imgServ" name="imgServ" style="background-image: url()"></div>
+                            <ul class="details">
+                                <li class="author" id="proveedor" name="proveedor" value="proveedor"> </li>
+                                <li class="date" id="precio" name="precio" value="precio"></li>
+                                <li class="tags">
+                                    <ul>
+                                        <li id="tag1" name="tag1" value="tag1"> <a type="submit" href=""></a> </li>
+                                        <li id="tag2" name="tag2" value="tag2"> <a type="submit" href=""></a> </li>
+                                        <li id="tag3" name="tag3" value="tag3"> <a type="submit" href=""></a> </li>
+                                        <li id="tag4" name="tag4" value="tag4"> <a type="submit" href=""></a> </li>
+                                        <li id="tag5" name="tag5" value="tag5"> <a type="submit" href=""></a> </li>
+                                        <li id="tag6" name="tag6" value="tag6"> <a type="submit" href=""></a> </li>   
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="description">          
+                            <h1 id="servName" name="servName" value="servName"> </h1>
+                            <h2 id="proveedor" name="proveedor" value="proveedor"> </h2>
+                            <p id="decripcion" name="decripcion" value="descripción"> </p>
+                            <p class="read-more">
+                                <a id="verMas" name="verMas" value="verMas" type="submit" href="">Ver más</a>
+                            </p>
+                        </div>
+                    </div>                    
+                </div>     
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerSection">
+            <section class="confeti">
+                <img src="../../Images/logo.png" alt="Logo Confeti" width="100" height="70">
+                <section>
+                    <h3>Confeti con-Fiesta</h3>
+                    <p>Al servicio de tus eventos</p>
+                </section>
+            </section>
+            <section class="contact">
+                <h3>Medios de contacto:</h3>
+                <ul>
+                    <li> <span class="fa-brands fa-whatsapp"></span><a href="https://api.whatsapp.com/send?phone=+529212989328&text=Hola, Necesito mas informacion!" target="none">921-298-9328</a></li>
+                    <li> <span class="fa-solid fa-envelope"></span><a href="mailto:confeti.confiesta00@gmail.com" target="none"> confeti.confiesta00@gmail.com </a></li>
+                </ul>
+            </section>
+            <section class="aboutUs">
+                <h3>Presentación</h3>
+                <ul>
+                    <li><a href="aboutUs.html">Misión y Visión</a></li>
+                    <li><a href="aboutUs.html">Politicas de privacidad</a></li>
+                    <li><a href="aboutUs.html">Terminos y condiciones</a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

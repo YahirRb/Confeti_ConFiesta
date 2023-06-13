@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Confeti</title>
+    <link rel="icon" href="../../Images/iconLogo.ico">
+    <link rel="stylesheet" href="../../Style/index.css">
+    <link rel="stylesheet" href="../../Style/deatilService.css">
+    <link rel="stylesheet" href="../../Style/buttons.css">
+    <link rel="stylesheet" href="../../Style/cards.css">
+    <link rel="stylesheet" href="../../Style/userProfile.css">
+    <script src="https://kit.fontawesome.com/8e785e1f4e.js" crossorigin="anonymous"></script>
+    <script type="module" src="../../../Model/filtroBusqueda.js"></script>
+    <script type="module" src="../../../Model/Usuario.js"></script>
+</head>
+
+<body>
+    <div class="red">
+        <div id="instagram">
+          <a href="https://www.instagram.com/confeti_con_fiesta/" target="none" class="fa-brands fa-instagram"></a>
+        </div>
+        <div id="email">
+            <a href="mailto:confeti.confiesta00@gmail.com" target="none" class="fa-solid fa-envelope"></a>
+          </div>
+    </div>
+    
+    <input type="checkbox" id="check">
+    <nav>
+        <div class="icon"> 
+            <a href="main.html"> <img src="../../Images/logo.png" alt="Logo Confeti" width="100" height="70"> </a>
+            <a href="main.html"> <img src="../../Images/textNomEsl.png" alt="Confeti" width="280" height="60" id="imgLogo"> </a>
+        </div>
+
+        <div class="searchBox">
+            <div id="searchBar">
+                <input type="search" placeholder="Search here" id="search">
+                <span class="fa fa-search"></span>
+            </div>
+            <select id="suggestionsSearch" size="5">
+            </select>
+        </div>
+
+        <div class="icon" id="premiumIcon"> 
+            <a href="premium.html"> <img id="imgPremium" src="../../Images/premium.png" alt="Logo Confeti" width="70" height="60"> </a>
+        </div>
+
+        <ol id="dropMenu">
+            <div class="userMenu" id="menuPremium">
+                <ul>
+                    <li>Menú usuario <i class="fa fa-angle-down"></i>
+                        <ul>
+                            <li id="menuPremium" onclick="location.href='userProfile.html'">Mi perfil <span class="fa-solid fa-user" style="color: #dbb309;"></span></li>
+                            <li id="menuPremium" onclick="location.href='carrito.html'">Ver carrito <span class="fa-solid fa-cart-shopping"></span></li>
+                            <li id="menuPremium" onclick="location.href='encargos.html'">Ver encargos<span class="fa-sharp fa-solid fa-gifts"></span></li>
+                            <li id="menuPremium" onclick="location.href='volverseProveedor.html'">Volverse proveedor<span class="fa-solid fa-user-tie"></span></li>
+                            <li id="menuPremium" onclick="location.href='modifyPwd.html'">Cambiar contraseña <span class="fa-sharp fa-solid fa-lock"></span></li>
+                            <li id="menuPremium" onclick="location.href='modifyEmail.html'">Cambiar correo <span class="fa-solid fa-envelope"></span></li>
+                            <li id="menuPremium" onclick="location.href='favoritos.html'">Favoritos <span class="fa-solid fa-heart" style="color: red;"></span></li>
+                            <li id="LogOut" onclick="location.href='../../main.html'">Cerrar sesión <span class="fa-solid fa-right-from-bracket"></span></li>
+                        </ul>
+                   </li>
+                </ul>
+            </div>
+        </ol>
+        <ol id="listMenu">
+            <li><a href="userProfile.html">Mi perfil <img src="../../Images/premium.png" alt="Logo Confeti" width="50" height="50"></a></li>
+            <li><a href="carrito.html">Ver carrito<span class="fa-solid fa-cart-shopping"></span></a></li>
+            <li><a href="encargos.html">Ver encargos<span class="fa-sharp fa-solid fa-gifts"></span></a></li>
+            <li><a href="volverseProveedor.html">Volverse proveedor<span class="fa-solid fa-user-tie"></span></a></li>
+            <li><a href="modifyPwd.html">Cambiar contraseña<span class="fa-sharp fa-solid fa-lock"></span></a></li>
+            <li><a href="modifyEmail.html">Cambiar correo<span class="fa-solid fa-envelope"></span></a></li>
+            <li><a href="favoritos.html">Favoritos<span class="fa-solid fa-heart" style="color: red;"></span></a></li>
+            <li id="LogOut"><a href="">Cerrar sesión <span class="fa-solid fa-right-from-bracket"></span></a></li>
+        </ol>
+        <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+        </label>
+    </nav>
+
+    <main>
+        <div class="column1" id="column1P" name="column1">
+            <a href=""><h1 class="anuncio1" id="anuncio1">Anuncio 1</h1></a>
+        </div>
+
+        <div class="column2" id="column2P" name="column2">
+            <a href=""><h1 class="anuncio2" id="anuncio2">Anuncio 2</h1></a>
+        </div>
+
+        <div class="content" id="contentP"> 
+            <div class="dataProv">
+                <div class="detailHead">
+                    <div class="perfilServ" id="perfilServ" name="perfilServ">
+                        <img src="">
+                    </div>
+
+                    <!--Rating-->
+                    <div class="rating">
+                        <label for="star-1">
+                            <input type="radio" id="star-1" name="star-radio" value="star-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <label for="star-2">
+                            <input type="radio" id="star-2" name="star-radio" value="star-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <label for="star-3">
+                            <input type="radio" id="star-3" name="star-radio" value="star-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <label for="star-4">
+                            <input type="radio" id="star-4" name="star-radio" value="star-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <label for="star-5">
+                            <input type="radio" id="star-5" name="star-radio" value="star-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                    </div>    
+               </div>
+
+                <div class="descPaq">
+                    <div id="contratoHead">
+                        <h2 id="nombre" name="nombre"> </h2>
+                        <button class="btnCancelar" id="cancelarContrato"> Cancelar contrato</button>
+                    </div>
+
+                    <div class="registro"> 
+                        <h2 id="proveedor" name="proveedor"> </h2> 
+                        <label for="descripcion">Descripción</label>
+                        <p id="detailDescripcion" name="detailDescripcion">  </p>
+                        <label for="precio">Precio ($)</label>
+                        <h2 id="precioPaquete" name="precioPaquete"> </h2> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="servProvided" id="servicioContratado">
+                <h1>Detalles:</h1>
+                <div class="detalleContrato" id="etiquetas">
+                    <div id="tablaDetalle">
+                        <label>Servicio:</label>
+                        <h2 id="cantidadContrato"> </h2>
+                    </div>
+                    <div id="tablaDetalle">
+                        <label>Cantidad</label>
+                        <h2 id="cantidadContrato"> </h2>
+                    </div>
+                    <div id="tablaDetalle">
+                        <label>Unidad</label>
+                        <h2 id="unidadContrato"></h2>
+                    </div>
+                    <div id="tablaDetalle">
+                        <label>Fecha de entrega</label>
+                        <h2 id="entregaContrato"></h2>
+                    </div>
+                    <div id="tablaDetalle">
+                        <label>Fecha de contratación:</label>
+                        <h2 id="contratacionContrato"></h2>
+                    </div>
+                </div>
+                
+                <div id="descripcionCliente">
+                    <p id="descripcionContrato"></p>
+                </div> 
+
+
+                <div class="comments-container">
+                    <ul id="comments-list" class="comments-list" >
+                        <!--Comentario con foto-->
+                        <li>  
+                            <div class="comment-main-level" id="conFoto" name="conFoto" style="display: none;">
+                                <!-- Avatar -->
+                                <div class="comment-avatar" id="fotoPerfil" name="fotoPerfil">
+                                    <img src="">
+                                </div>
+                                <!-- Contenedor del Comentario -->
+                                <div class="comment-box" id="commentBox">
+                                    <div class="comment-head" id="commentHead">
+                                        <h6 class="comment-name by-author" id="usuarioAutor" name="usuarioAutor"> </h6>
+                                    </div>
+                                    <div class="comment-content" id="comentario" name="comentario">
+                                        <textarea name="comentarioCliente" id="comentarioCliente" cols="50" rows="5"
+                                        placeholder="Agrega una reseña del servicio"></textarea></br>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--Comentario sin foto de perfil-->
+                        <li>
+                            <div class="comment-main-level" id="sinFoto" name="sinFoto" style="display: none;">
+                                <!-- Avatar -->
+                                <div class="comment-avatar">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973461_1280.png">
+                                </div>
+                                <!-- Contenedor del Comentario -->
+                                <div class="comment-box" id="commentBox">
+                                    <div class="comment-head" id="commentHead">
+                                        <h6 class="comment-name by-author" id="usuarioAutor" name="usuarioAutor"> </h6>
+                                    </div>
+                                    <div class="comment-content" id="comentario" name="comentario">
+                                        <textarea name="comentarioCliente" id="comentarioCliente" cols="50" rows="5"
+                                        placeholder="Agrega una reseña del servicio"></textarea></br>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="btnAddSP">Enviar comentario</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <dialog id="cancelacionExtemporanea" style="display: none;">
+        <div class="modalHead">
+            <h1>Cancelación extemporánea</h1>
+        </div>
+        <div class="modalBody">
+            <h2>Su contrato será cancelado, sin embargo,</h2>
+            <h2>conlleva una amonestación y multa</h2>
+            <div id="bodyPuntos">
+                <h2>Plazo máximo de cancelación: </h2>
+                <h2 id="plazoCancelación"></h2>
+            </div>
+        </div>       
+        <div class="modalBtn">
+            <button class="btnPremium" id="aceptar" type="submit">
+                Aceptar
+            </button>
+            <button class="btnCancelar" id="cancelar" type="submit">
+                Cancelar
+            </button>
+        </div>     
+    </dialog>
+
+    <dialog id="cancelacionCorrecta" style="display: none;">
+        <div class="modalHead">
+            <h1>Cancelar contrato</h1>
+        </div>
+        <div class="modalBody">
+            <h2>Cancelación dentro del plazo</h2>
+            <div id="bodyPuntos">
+                <h2>Plazo máximo de cancelación: </h2>
+                <h2 id="plazoCancelación"></h2>
+            </div>
+
+            <h2>Seleccione metodo de reembolso</h2>
+            <div class="datoReembolso" id="reembolso">
+                <div class="radio-container">
+                    <div class="radio-wrapper" id="paypalOption">
+                      <label class="radio-button">
+                        <input type="radio" name="radio-group" id="option1" value="paypal">
+                        <span class="radio-checkmark" id="paypal-checkmark"></span>
+                        <div id="paypal">
+                            <span class="cuenta" id="pay">Pay</span>
+                            <span class="cuenta" id="pal">pal</span>
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="radio-wrapper" id="mercadoOption">
+                      <label class="radio-button">
+                        <input type="radio" name="radio-group" id="option2" value="marcadoPago">
+                        <span class="radio-checkmark" id="mercado-checkmark"></span>
+                        <div>
+                            <span class="cuenta" id="mercado">Mercado</span>
+                            <span class="cuenta" id="pago">pago</span>
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="radio-wrapper" id="tarjetaOption">
+                      <label class="radio-button">
+                        <input type="radio" name="radio-group" id="option3" value="tarjeta">
+                        <span class="radio-checkmark"></span>
+                        <span class="cuenta">Tarjeta de debito</span>
+                      </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="datoReembolso" id="usuario" style="display: none;">
+                <h4>Estos datos no serán guardados</h4>
+                <h2>Inserte su correo:</h2>
+                <input type="email" id="correoReembolso" required="true" name="correoReembolso">
+            </div>
+
+            <div class="datoReembolso" id="tarjeta" style="display: none;">
+                <h4>Estos datos no serán guardados</h4>
+                <h2>Inserte su numero de tarjeta:</h2>
+                <input type="number" id="tarjetaReembolso" required="true" name="tarjetaReembolso">
+            </div>
+            
+        </div>       
+        <div class="modalBtn">
+            <button class="btnPremium" id="aceptar" type="submit">
+                Aceptar
+            </button>
+            <button class="btnCancelar" id="cancelar" type="submit">
+                Cancelar
+            </button>
+        </div>     
+    </dialog>
+
+    <footer>
+        <div class="footerSection">
+            <section class="confeti">
+                <img src="../../Images/logo.png" alt="Logo Confeti" width="100" height="70">
+                <section>
+                    <h3>Confeti con-Fiesta</h3>
+                    <p>Al servicio de tus eventos</p>
+                </section>
+            </section>
+            <section class="contact">
+                <h3>Medios de contacto:</h3>
+                <ul>
+                    <li> <span class="fa-brands fa-whatsapp"></span><a href="https://api.whatsapp.com/send?phone=+529212989328&text=Hola, Necesito mas informacion!" target="none">921-298-9328</a></li>
+                    <li> <span class="fa-solid fa-envelope"></span><a href="mailto:confeti.confiesta00@gmail.com" target="none"> confeti.confiesta00@gmail.com </a></li>
+                </ul>
+            </section>
+            <section class="aboutUs">
+                <h3>Presentación</h3>
+                <ul>
+                    <li><a href="aboutUs.html">Misión y Visión</a></li>
+                    <li><a href="aboutUs.html">Politicas de privacidad</a></li>
+                    <li><a href="aboutUs.html">Terminos y condiciones</a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

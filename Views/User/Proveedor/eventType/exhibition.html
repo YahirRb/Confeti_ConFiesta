@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Confeti</title>
+    <link rel="icon" href="../../../Images/icon.png">
+    <link rel="stylesheet" href="../../../Style/index.css">
+    <link rel="stylesheet" href="../../../Style/cards.css">
+    <link rel="stylesheet" href="../../../Style/buttons.css">
+    <script src="https://kit.fontawesome.com/8e785e1f4e.js" crossorigin="anonymous"></script>
+    <script type="module" src="/Model/filtroBusqueda.js"></script>
+    <script type="module" src="/Controller/ControlServicio.js"></script>
+    <script type="module" src="/Controller/ej.js"></script>
+    <script type="module" src="/Controller/j.js"></script>
+    <script type="module" src="/Model/verMas.js"></script>
+    <script type="module" src="/Model/Proveedor.js" ></script>
+</head>
+
+<body>
+    <div class="red">
+        <div id="instagram">
+          <a href="https://www.instagram.com/confeti_con_fiesta/" target="none" class="fa-brands fa-instagram"></a>
+        </div>
+        <div id="email">
+            <a href="mailto:confeti.confiesta00@gmail.com" target="none" class="fa-solid fa-envelope"></a>
+        </div>
+    </div>
+    
+    <input type="checkbox" id="check">
+    <nav>
+        <div class="icon"> 
+            <a href="../main.html"> <img src="../../../Images/logo.png" alt="Logo Confeti" width="100" height="70"> </a>
+            <a href="../main.html"> <img src="../../../Images/textNomEsl.png" alt="Confeti" width="280" height="60" id="imgLogo"> </a>
+        </div>
+
+        <div class="searchBox">
+            <div id="searchBar">
+                <input type="search" placeholder="Search here" id="search">
+                <span class="fa fa-search"></span>
+            </div>
+            <select id="suggestionsSearch" size="5">
+            </select>
+        </div>
+
+        <ol id="dropMenu">
+            <div class="userMenu">
+                <ul>
+                    <i class=></i>
+                    <li id="menu">Menú usuario <i class="fa fa-angle-down"></i>
+                        <ul>
+                            <li id="perfil">Mi perfil <span class="fa-solid fa-user"></span></li>
+                            <li id="ventas">Mis ventas</li>
+                            <li id="verCarrito">Ver carrito <span class="fa-solid fa-cart-shopping"></span></li>
+                            <li id="encargos">Ver encargos</li>
+                            <li onclick="window.location='../modifyPwd.html'">Cambiar contraseña</li>
+                            <li onclick="window.location='../modifyEmail.html'">Cambiar correo</li>
+                            <li id="favoritos">Favoritos <span class="fa-solid fa-heart"></span></li>
+                            <li id="premium"> Plan premium <span class="fa-solid fa-crown" style="color: #dbad09;"></span></li>
+                            <li id="LogOut">Cerrar sesión <span class="fa-solid fa-right-from-bracket"></span></li>
+                        </ul>
+                   </li>
+                </ul>
+            </div>
+        </ol>
+        <ol id="listMenu">
+            <li id="Miperfil"><a href="../userProfile.html">Mi perfil<span class="fa-solid fa-user"></span></a></span></li>
+            <li id="MisVentas"><a href="../ventas.html">Mis ventas</a></li>
+            <li id="Carrito"><a href="../carrito.html">Ver carrito<span class="fa-solid fa-cart-shopping"></span></a></li>
+            <li id="VerEncargos"><a href="../encargos.html">Ver encargos</a></li>
+            <li id="CambiarPass"><a href="../modifyPwd.html">Cambiar contraseña</a></li>
+            <li id="CambiarEmail"><a href="../modifyEmail.html">Cambiar correo</a></li>
+            <li id="Favoritos"><a href="../favoritos.html">Favoritos<span class="fa-solid fa-heart"></span></a></li>
+            <li id="premium"><a href="../premium.html">Plan premium<span class="fa-solid fa-crown" style="color: #dbad09;"></span></a></li>
+            <li id="LogOut"><a href="">Cerrar sesión <span class="fa-solid fa-right-from-bracket"></span></a></li>
+        </ol>
+        <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+        </label>
+    </nav>
+    
+    <main>
+        <div class="eventType">
+            <div class="btnHead" id="btnHead01">
+                <button class="btnEvent" onclick="location.href='wedding.html'"> <span class="eventBox">Boda</span> </button>
+                <button class="btnEvent" onclick="location.href='birthday.html'"> <span class="eventBox">Cumpleaños</span> </button>
+                <button class="btnEvent" onclick="location.href='graduation.html'"> <span class="eventBox">Graduación</span> </button>
+                <button class="btnEvent" onclick="location.href='babyShower.html'"> <span class="eventBox">Baby Shower</span> </button>
+                <button class="btnEvent" onclick="location.href='xvs.html'"> <span class="eventBox">XV años</span> </button>
+                <button class="btnEvent" onclick="location.href='convention.html'"> <span class="eventBox">Convención</span> </button>
+                <button class="position" onclick="location.href='exhibition.html'"> <span>Exhibición</span> </button>
+                <button class="btnEvent" onclick="location.href='concert.html'"> <span class="eventBox">Concierto</span> </button>
+                <button class="btnEvent" onclick="location.href='themeParty.html'"> <span class="eventBox">Fiesta tematica</span> </button>
+            </div>
+
+            <div class="btnHead" id="btnHead02">
+                <button class="btnEvent" onclick="location.href='anniversary.html'"> <span class="eventBox">Aniversario</span> </button>
+                <button class="btnEvent" onclick="location.href='festival.html'"> <span class="eventBox">Festival</span> </button>
+                <button class="btnEvent" onclick="location.href='reception.html'"> <span class="eventBox">Recepción</span> </button>
+                <button class="btnEvent" onclick="location.href='symposium.html'"> <span class="eventBox">Simposio</span> </button>
+                <button class="btnEvent" onclick="location.href='meeting.html'"> <span class="eventBox">Reunión</span> </button>
+                <button class="btnEvent" onclick="location.href='carnival.html'"> <span class="eventBox"> Carnaval </span> </button>
+                <button class="btnEvent" onclick="location.href='excursion.html'"> <span class="eventBox"> Excursión </span> </button>
+                <button class="btnEvent" onclick="location.href='retreat.html'"> <span class="eventBox"> Retiro </span> </button>
+                <button class="btnEvent" onclick="location.href='customEvent.html'"> <span class="eventBox"> Evento personalizado </span> </button>
+            </div>
+
+            <div class="btnHead" id="btnHead03">
+                <button class="btnEvent" onclick="location.href='wedding.html'"> <span class="eventBox">Boda</span> </button>
+                <button class="btnEvent" onclick="location.href='birthday.html'"> <span class="eventBox">Cumpleaños</span> </button>
+                <button class="btnEvent" onclick="location.href='graduation.html'"> <span class="eventBox">Graduación</span> </button>
+                <button class="btnEvent" onclick="location.href='babyShower.html'"> <span class="eventBox">Baby Shower</span> </button>
+                <button class="btnEvent" onclick="location.href='xvs.html'"> <span class="eventBox">XV años</span> </button>
+                <button class="btnEvent" onclick="location.href='convention.html'"> <span class="eventBox">Convención</span> </button>
+            </div>
+
+            <div class="btnHead" id="btnHead04">
+                <button class="position" onclick="location.href='exhibition.html'"> <span>Exhibición</span> </button>
+                <button class="btnEvent" onclick="location.href='concert.html'"> <span class="eventBox">Concierto</span> </button>
+                <button class="btnEvent" onclick="location.href='themeParty.html'"> <span class="eventBox">Fiesta tematica</span> </button>
+                <button class="btnEvent" onclick="location.href='anniversary.html'"> <span class="eventBox">Aniversario</span> </button>
+                <button class="btnEvent" onclick="location.href='festival.html'"> <span class="eventBox">Festival</span> </button>
+                <button class="btnEvent" onclick="location.href='reception.html'"> <span class="eventBox">Recepción</span> </button>
+            </div>
+
+            <div class="btnHead" id="btnHead05">
+                <button class="btnEvent" onclick="location.href='symposium.html'"> <span class="eventBox">Simposio</span> </button>
+                <button class="btnEvent" onclick="location.href='meeting.html'"> <span class="eventBox">Reunión</span> </button>
+                <button class="btnEvent" onclick="location.href='carnival.html'"> <span class="eventBox"> Carnaval </span> </button>
+                <button class="btnEvent" onclick="location.href='excursion.html'"> <span class="eventBox"> Excursión </span> </button>
+                <button class="btnEvent" onclick="location.href='retreat.html'"> <span class="eventBox"> Retiro </span> </button>
+                <button class="btnEvent" onclick="location.href='customEvent.html'"> <span class="eventBox"> Evento personalizado </span> </button>
+            </div>
+        </div>
+
+        <div class="column1" id="column1" name="column1">
+            <a href=""><h1 class="anuncio1" id="anuncio1">Anuncio 1</h1></a>
+        </div>
+
+        <div class="column2" id="column2" name="column2">
+            <a href=""><h1 class="anuncio2" id="anuncio2">Anuncio 2</h1></a>
+        </div>
+
+        <div class="content"> 
+            <div class="content1">
+                <!-- Mobiliario -->
+                <div class="row">
+                        <div class="service-type card">
+                            <div class="wrapper" style="background-image: url(https://images.pexels.com/photos/2504911/pexels-photo-2504911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)">
+                                <div class="data">
+                                    <div class="content">
+                                        <h1 class="service" value="mobiliario"><a href="../results.html">Mobiliario</a></h1>
+                                        <a href="../results.html" class="btnMore" value="mobiliario">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>  
+
+                <!-- Seguridad -->
+                <div class="row">
+                        <div class="service-type card">
+                            <div class="wrapper" style="background-image: url(https://images.pexels.com/photos/7091539/pexels-photo-7091539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)">
+                                <div class="data">
+                                    <div class="content">
+                                        <h1 class="service" value="seguridad"><a href="../results.html">Seguridad</a></h1>
+                                        <a href="../results.html" class="btnMore" value="seguridad">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <!-- Planificador -->
+                <div class="row">
+                    <div class="service-type card">
+                        <div class="wrapper" style="background-image: url(https://images.pexels.com/photos/5428642/pexels-photo-5428642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)">
+                            <div class="data">
+                                <div class="content">
+                                    <h1 class="service" value="planificador"><a href="../results.html">Planificador</a></h1>
+                                    <a href="../results.html" class="btnMore" value="planificador">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content2">
+                <!-- Catering -->
+                <div class="row">
+                        <div class="service-type card">
+                            <div class="wrapper" style="background-image: url(https://images.pexels.com/photos/587739/pexels-photo-587739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)">
+                                <div class="data">
+                                    <div class="content">
+                                        <h1 class="service" value="catering"><a href="../results.html">Catering</a></h1>
+                                        <a href="../results.html" class="btnMore" value="catering">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>  
+
+                <!-- Decoración e iluminación -->
+                <div class="row">
+                        <div class="service-type card">
+                            <div class="wrapper" style="background-image: url(https://images.pexels.com/photos/11745317/pexels-photo-11745317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)">
+                                <div class="data">
+                                    <div class="content">
+                                        <h1 class="service" value="ambientación"><a href="../results.html">Ambientación</a></h1>
+                                        <a href="../results.html" class="btnMore" value="ambientación">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <!-- Presentadores -->
+                <div class="row">
+                    <div class="service-type card">
+                        <div class="wrapper" style="background-image: url(https://images.pexels.com/photos/3321799/pexels-photo-3321799.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)">
+                            <div class="data">
+                                <div class="content">
+                                    <h1 class="service" value="presentador"><a href="../results.html">Presentadores</a></h1>
+                                    <a href="../results.html" class="btnMore" value="presentador">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content3">
+                <!-- Foto y video -->
+                <div class="row">
+                        <div class="service-type card">
+                            <div class="wrapper" style="background-image: url(https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)">
+                                <div class="data">
+                                    <div class="content">
+                                        <h1 class="service" value="foto y video"><a href="../results.html">Foto y video</a></h1>
+                                        <a href="../results.html" class="btnMore"  value="foto y video">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>  
+
+                <!-- Maquillaje y peinados -->
+                <div class="row">
+                        <div class="service-type card">
+                            <div class="wrapper" style="background-image: url(https://images.pexels.com/photos/5368633/pexels-photo-5368633.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)">
+                                <div class="data">
+                                    <div class="content">
+                                        <h1 class="service" value="belleza"><a href="../results.html">Belleza</a></h1>
+                                        <a href="../results.html" class="btnMore" value="belleza">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div> 
+            </div>
+
+            <div class="content4">
+                <!-- Música -->
+                <div class="row">
+                        <div class="service-type card">
+                            <div class="wrapper" style="background-image: url(https://images.pexels.com/photos/844928/pexels-photo-844928.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)">
+                                <div class="data">
+                                    <div class="content">
+                                        <h1 class="service" value="música"><a href="../results.html">Música</a></h1>
+                                        <a href="../results.html" class="btnMore" value="música">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>  
+
+                 <!-- Modelo -->
+                 <div class="row">
+                    <div class="service-type card">
+                        <div class="wrapper" style="background-image: url(https://images.pexels.com/photos/1964072/pexels-photo-1964072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)">
+                            <div class="data">
+                                <div class="content">
+                                    <h1 class="service" value="modelo"><a href="../results.html">Modelos</a></h1>
+                                    <a href="../results.html" class="btnMore" value="modelo">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerSection">
+            <section class="confeti">
+                <img src="../../../Images/logo.png" alt="Logo Confeti" width="100" height="70">
+                <section>
+                    <h3>Confeti con-Fiesta</h3>
+                    <p>Al servicio de tus eventos</p>
+                </section>
+            </section>
+            <section class="contact">
+                <h3>Medios de contacto:</h3>
+                <ul>
+                    <li> <span class="fa-brands fa-whatsapp"></span><a href="https://api.whatsapp.com/send?phone=+529212989328&text=Hola, Necesito mas informacion!" target="none">921-298-9328</a></li>
+                    <li> <span class="fa-solid fa-envelope"></span><a href="mailto:confeti.confiesta00@gmail.com" target="none"> confeti.confiesta00@gmail.com </a></li>
+                </ul>
+            </section>
+            <section class="aboutUs">
+                <h3>Presentación</h3>
+                <ul>
+                    <li><a href="../aboutUs.html">Misión y Visión</a></li>
+                    <li><a href="../aboutUs.html">Politicas de privacidad</a></li>
+                    <li><a href="../aboutUs.html">Terminos y condiciones</a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,317 @@
+/*Caja/Boton para tipos de eventos*/
+.eventBox {
+    width: 120px;
+    height: auto;
+    float: left;
+    transition: .3s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 8px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 13px;
+    color: #85714D;
+}
+.eventBox:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+}
+.eventBox:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+}
+.eventBox:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.eventBox:hover:before {
+    border-color: #85714D;
+    height: 100%;
+    transform: translateX(0);
+    transition: .2s transform linear, .2s height linear .2s;
+}
+.eventBox:hover:after {
+    border-color: #85714D;
+    height: 100%;
+    transform: translateX(0);
+    transition: .2s transform linear, .2s height linear .2s;
+}
+.btnEvent {
+    color: #85714D;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.position{
+    height: auto;
+    position: relative;
+    background: transparent;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 13px;
+    color: #85714D;
+    border: 4px solid #85714D;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transform: translateX(0);
+}
+.position span{
+    width: 120px;
+    height: auto;
+    float: left;
+    transition: .3s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 8px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 13px;
+    color: #85714D;
+    cursor: pointer;
+}
+
+/*Check box paquetes*/
+
+.checkServ input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkServ {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background: #101820;
+    border-radius: 50px;
+    transition: all 0.7s;
+    --spread: 20px;
+}
+.checkServ input:checked ~ .checkmark {
+    background: #fff;
+    box-shadow: -10px -10px var(--spread) 0px #FFD700, 0 -10px var(--spread) 0px #FFD700, 10px -10px var(--spread) 0px #FFD700, 10px 0 var(--spread) 0px #FFD700, 10px 10px var(--spread) 0px #FFD700, 0 10px var(--spread) 0px #FFD700, -10px 10px var(--spread) 0px #FFD700;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkServ input:checked ~ .checkmark:after {
+    display: block;
+    animation: checkmark 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+.checkServ .checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid #85714D;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+}
+
+@keyframes checkmark {
+    from {
+      transform: rotate(-45deg) scale(0);
+    }
+  
+    to {
+      transform: rotate(45deg) scale(1);
+    }
+}
+  
+  /* Style the label text */
+.checkServ span {
+    margin-left: 2em;
+    color: black;
+    font-weight: bold;
+}
+
+/*Boton premium*/
+.btnPremium {
+    width: fit-content;
+    display: flex;
+    padding: 0.6em 1.1em;
+    gap: 0.4rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+    background: linear-gradient(15deg, #880088, #aa2068, #cc3f47, #de6f3d, #f09f33, #de6f3d, #cc3f47, #aa2068, #880088) no-repeat;
+    background-size: 300%;
+    background-position: left center;
+    transition: background .3s ease;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btnPremium:hover {
+    background-size: 320%;
+    background-position: right center;
+    transform: scale(1.3);
+  }
+  
+  .btnPremium:hover svg {
+    fill: #fff;
+  }
+  
+  .btnPremium svg {
+    width: 23px;
+    fill: #dbad09;
+    transition: .3s ease;
+  }
+  #btnPuntos,#canjearPuntos,#btnComprar,#aceptar{
+    background: #c38f31;
+  }
+  .btnCancelar{
+    width: fit-content;
+    display: flex;
+    padding: 0.6em 1.1em;
+    gap: 0.4rem;
+    font-weight: bold;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #7B7B7B;
+  }
+  .btnCancelar:hover{
+    transform: scale(1.1);
+  }
+  #cancelarContrato{
+    margin-left: 40%;
+  }
+
+  /*Reembolso*/
+  .radio-container {
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: baseline;
+    margin-left: 1% ;
+  }
+  .radio-wrapper {
+    margin-bottom: 5px;
+  }
+  .radio-button {
+    display: flex;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  .radio-button:hover {
+    transform: translateY(-2px);
+  }
+  .radio-button input[type="radio"] {
+    display: none;
+  }
+  .radio-checkmark {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border: 2px solid #101820;
+    border-radius: 50%;
+  }
+  #paypal-checkmark{
+    border: 2px solid #2790C3;
+  }
+  #mercado-checkmark{
+    border: 2px solid #00B1EA;
+  }
+
+  .radio-checkmark:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #85714D;
+    transition: all 0.2s ease-in-out;
+  }
+  #paypal-checkmark::before{
+    background-color: #27346A;
+  }
+  #mercado-checkmark:before{
+    background-color: #2D3277;
+  }
+  
+  .radio-button input[type="radio"]:checked ~ .radio-checkmark:before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .cuenta {
+    font-size: 16px;
+    font-weight: 600;
+    color: #101820;
+  }
+  
+  #cancelarPremium{
+    width: 120px;
+    margin-right: 3%;
+    margin-top: 13%;
+    padding-bottom: 1%;
+  }
+
+  #addCarrito{
+    margin-top: 2%;
+  }
+
+  .btnPago{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+  }
+  .btnPago:hover{
+    transform: scale(1.2);
+  }
+  #pagoPaypal{
+    background-color: #FFC439;
+    color: #27346A;
+  }
+  #pagoMercagoPago{
+    background-color: #00B1EA;
+  }

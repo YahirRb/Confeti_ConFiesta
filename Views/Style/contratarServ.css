@@ -1,0 +1,131 @@
+body{
+    background-image: url(https://images.pexels.com/photos/11832569/pexels-photo-11832569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size:cover;
+}
+main{
+    height: auto;
+}
+
+.ContratarServicio{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.form {
+    width: 380px;
+    height: auto;
+    border: 1px solid #101820;
+    border-radius: 6px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    background-color: #fff;
+    margin: 10px;
+} 
+.form-header {
+    background-color: #101820;
+    padding: 16px;
+    text-align: center;
+} 
+.form-header .text-header {
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 800;
+} 
+.form-body {
+    padding: 16px;
+    display: flex;
+}
+.contrato label,
+.fecha label,
+.tableServ label{
+    display: block;
+    font-size: 16px;
+    color: #101820;
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-right: 3px;
+}
+
+.contrato h2,h3{
+    color: #101820;
+}
+#detalleServicio{
+    margin-bottom: 25px;
+}
+#option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#option span{
+    color:#101820;
+    font-size: 20px;
+}
+
+.fecha{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.fecha input[type="date"]{
+    margin-left: 2%;
+    border: none;
+    color: #101820;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor:text;
+}
+.contrato input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #101820;
+    border-radius: 4px;
+    color: #101820;
+    font-weight:bold;
+}
+#descripcion{
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #101820;
+    border-radius: 4px;
+    color: #101820;
+    line-height: 1.35;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    text-align: justify;
+}
+
+/*Precio-cantidad-unidad*/
+.tableServ{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+.contratar{
+    display: flex;
+    justify-content: center;
+}
+.btnContratar{
+    font-size: 15px;
+    color: #fff;
+    background: #c38f31;
+    padding: 2% 5%;
+    border: none;
+    cursor: pointer;
+}
+#contratar:hover{
+    transform: scale(1.2);
+}
+#cancelar{
+    background: #7b7b77;
+    margin-left: 20%;
+}
+#cancelar:hover{
+    transform: scale(1.05);
+}

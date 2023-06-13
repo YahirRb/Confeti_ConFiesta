@@ -1,0 +1,365 @@
+.app {
+  position: relative;
+  padding-left: 0.5em;
+  max-width: 60em;
+  height: 400px;
+  background: #101820;
+  background-size: auto 10em;
+  background-repeat: repeat-x;
+  background-position: center top;
+}
+.userPhoto {
+  position: relative;
+  height: 8em;
+  grid-row: 1/3;
+  grid-column: 2;
+  background-size: cover;
+  background-position: right center;
+}
+.userPhoto img {
+  display: block;
+  width: 90%;
+  height: 400px;
+}
+.btnAction {
+  display: flex;
+  padding: 1.5em var(--var-padding);
+  grid-row: 1;
+  grid-column: 1;
+  background: #fff;
+}
+.btnAction span{
+    color: #101820;
+    font-size: 30px;
+}
+.btnAction span:hover{
+    color: #7d604f;
+    transform: scale(2);
+} 
+
+.userData {
+  padding: var(--var-padding);
+  grid-row: 2;
+  grid-column: 1;
+  background: #fff;
+  font-family: sans-serif;
+}
+.userData h1 {
+  margin-top: 0;
+  font-size: 40px;
+  color: #101820;
+  padding: 2% 0%;
+}
+.userData label{
+    color: #85714D;
+    font-size: 20px;
+    font-weight: 900;
+}
+.userData h3{
+    color: #101820;
+    font-size: 25px;
+}
+#msgPremium{
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 800;
+  color: #dbad09;
+}
+
+.dataProv{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+}
+.perfilServ{
+  width: 270px;
+  height: 250px;
+}
+
+
+.contactProv{
+  width: 70%;
+  height: 100%;
+  font-family: sans-serif;
+}
+.datos{
+  width: 100%;
+  height: auto;
+}
+.contactProv span{
+  color: #101820;
+  font-size: 20px;
+}
+
+.buttons{
+  width: 100%;
+  height: 100px;
+  padding: 3% 0% 2% 0%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnUser{
+  cursor: pointer;
+}
+
+.btnAddSP{
+  width: auto;
+  height: 30px;
+  padding: 0% 2%;
+  background: #85714D;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+}
+.btnAddSP:hover{
+  transform: scale(1.1);
+}
+.serviceBox{
+  padding-top: 2%;
+}
+.serviceBox span{
+  font-size: 22px;
+  padding: 1% 2%;
+  color: #101820;
+  width: 3%;
+}
+
+.contactProv h2{
+  color: #101820;
+  font-size: 25px;
+}
+.contactProv label, h4{
+  color: #101820;
+  font-size: 20px;  
+  line-height: 1.15;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  text-align: justify;
+}
+.servProvided h1{
+  color: #101820;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.datosContacto, .usuarioInf,.paypalEmail, .ubicacion{
+  display: flex;
+  flex-direction: row;
+  justify-content:left;
+}
+
+.datosContacto span, .paypalEmail span, .ubicacion span{
+  padding-right: 1%;
+}
+
+.usuarioInf label{
+  padding-right: 2%;
+}
+#confetiPoint, #emailIcon{
+  padding-left: 2%;
+}
+
+/*Agregar imagen a paquete*/
+.imgPaquete label,
+.registro label,
+.precioPaq label{
+    display: block;
+    font-size: 14px;
+    color: #101820;
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-right: 3px;
+}
+.imgPaquete label{
+  padding-left: 10%;
+}
+.imgPaquete{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+}
+.imgPaquete input[type="file"]{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #101820;
+    border-radius: 5px;
+    width: auto;
+    cursor: pointer;
+}
+
+#descripcion{
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #101820;
+  border-radius: 4px;
+  color: #101820;
+  font-weight:bold;
+}
+
+#addPaquete,#editPaquete{
+  margin-top: 10px;
+}
+
+.btnServices{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#desactServ, #actServ{
+  color: #101820;
+  font-size: 20px;
+  font-weight: 800;
+}
+#estadoServicio{
+  display: flex;
+  flex-direction: row;
+}
+#estadoServicio label{
+  padding: 0% 3%;
+}
+
+/*Checkbox para hacer visible e invisible*/
+.toggler {
+  width: 72px;
+}
+.toggler input {
+  display: none;
+}
+.toggler label {
+  display: block;
+  position: relative;
+  width: 72px;
+  height: 36px;
+  border: 1px solid #85714D;
+  border-radius: 36px;
+  background: #101820;
+  cursor: pointer;
+}
+.toggler label::after {
+  display: block;
+  border-radius: 100%;
+  background-color: #85714D;
+  content: '';
+  animation-name: toggler-size;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-out;
+  animation-direction: forwards;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+}
+.toggler label::after, .toggler label .toggler-on, .toggler label .toggler-off {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 26px;
+  height: 26px;
+  transform: translateY(-50%) translateX(-50%);
+  transition: left 0.15s ease-in-out, background-color 0.2s ease-out, width 0.15s ease-in-out, height 0.15s ease-in-out, opacity 0.15s ease-in-out;
+}
+.toggler input:checked + label::after, .toggler input:checked + label .toggler-on, .toggler input:checked + label .toggler-off {
+  left: 75%;
+}
+.toggler input:checked + label::after {
+  background-color: #fff;
+  animation-name: toggler-size2;
+}
+.toggler .toggler-on, .toggler .toggler-off {
+  opacity: 1;
+  z-index: 2;
+}
+.toggler input:checked + label .toggler-off, .toggler input:not(:checked) + label .toggler-on {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.toggler .path {
+  fill: none;
+  stroke: #fefefe;
+  stroke-width: 7px;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+@keyframes toggler-size {
+  0%, 100% {
+    width: 26px;
+    height: 26px;
+  }
+
+  50% {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@keyframes toggler-size2 {
+  0%, 100% {
+    width: 26px;
+    height: 26px;
+  }
+
+  50% {
+    width: 20px;
+    height: 20px;
+  }
+}
+ 
+
+@media (min-width: 6em) {
+
+  .app {
+    display: grid;
+    margin: 3em auto;
+    grid-template-rows: 5em auto;
+    grid-template-columns: 1.4fr 1fr;
+    padding-left: 2em;
+    background-size: auto;
+  }
+  .app::after {
+    position: absolute;
+    right: 1em;
+    left: 1em;
+    bottom: 0;
+    z-index: -1;
+    width: 95%;
+    height: 200px;
+    content: "";
+    box-shadow: 0 0 5em #7d604f;
+  }
+
+  .userPhoto {
+    height: auto;
+    width: 90%;
+  }
+
+  .btnAction {
+    justify-content: space-between;
+  }
+
+  .userData {
+    min-width: var(--main-column-width);
+  }
+  
+  .userData h1 {
+    margin-top: 0;
+    font-size: 25px;
+    color: #101820;
+    padding: 2% 0%;
+  }
+  .userData label{
+      color: #85714D;
+      font-size: 15px;
+      font-weight: 900;
+  }
+  .userData h3{
+      color: #101820;
+      font-size: 20px;
+  }
+}

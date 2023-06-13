@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Confeti</title>
+    <link rel="icon" href="../../Images/icon.png">
+    <link rel="stylesheet" href="../../Style/index.css">
+    <script src="https://kit.fontawesome.com/8e785e1f4e.js" crossorigin="anonymous"></script>
+    <script type="module" src="../../../Model/filtroBusqueda.js"></script>
+    <script type="module" src="../../../Model/Usuario.js"></script>
+</head>
+
+<body>
+    <div class="red">
+        <div id="instagram">
+          <a href="https://www.instagram.com/confeti_con_fiesta/" target="none" class="fa-brands fa-instagram"></a>
+        </div>
+        <div id="email">
+            <a href="mailto:confeti.confiesta00@gmail.com" target="none" class="fa-solid fa-envelope"></a>
+        </div>
+    </div>
+    
+    <input type="checkbox" id="check">
+    <nav>
+        <div class="icon"> 
+            <a href="main.html"> <img src="../../Images/logo.png" alt="Logo Confeti" width="100" height="70"> </a>
+            <a href="main.html"> <img src="../../Images/textNomEsl.png" alt="Confeti" width="280" height="60" id="imgLogo"> </a>
+        </div>
+
+        <div class="searchBox">
+            <div id="searchBar">
+                <input type="search" placeholder="Search here" id="search">
+                <span class="fa fa-search"></span>
+            </div>
+            <select id="suggestionsSearch" size="5">
+            </select>
+        </div>
+
+        <div class="icon" id="premiumIcon"> 
+            <a href="premium.html"> <img id="imgPremium" src="../../Images/premium.png" alt="Logo Confeti" width="70" height="60"> </a>
+        </div>
+
+        <ol id="dropMenu">
+            <div class="userMenu" id="menuPremium">
+                <ul>
+                    <li>Menú usuario <i class="fa fa-angle-down"></i>
+                        <ul>
+                            <li id="menuPremium" onclick="location.href='userProfile.html'">Mi perfil <span class="fa-solid fa-user" style="color: #dbb309;"></span></li>
+                            <li id="menuPremium" onclick="location.href='carrito.html'">Ver carrito <span class="fa-solid fa-cart-shopping"></span></li>
+                            <li id="menuPremium" onclick="location.href='encargos.html'">Ver encargos<span class="fa-sharp fa-solid fa-gifts"></span></li>
+                            <li id="menuPremium" onclick="location.href='volverseProveedor.html'">Volverse proveedor<span class="fa-solid fa-user-tie"></span></li>
+                            <li id="menuPremium" onclick="location.href='modifyPwd.html'">Cambiar contraseña <span class="fa-sharp fa-solid fa-lock"></span></li>
+                            <li id="menuPremium" onclick="location.href='modifyEmail.html'">Cambiar correo <span class="fa-solid fa-envelope"></span></li>
+                            <li id="menuPremium" onclick="location.href='favoritos.html'">Favoritos <span class="fa-solid fa-heart" style="color: red;"></span></li>
+                            <li id="LogOut" onclick="location.href='../../main.html'">Cerrar sesión <span class="fa-solid fa-right-from-bracket"></span></li>
+                        </ul>
+                   </li>
+                </ul>
+            </div>
+        </ol>
+        <ol id="listMenu">
+            <li><a href="userProfile.html">Mi perfil <img src="../../Images/premium.png" alt="Logo Confeti" width="50" height="50"></a></li>
+            <li><a href="carrito.html">Ver carrito<span class="fa-solid fa-cart-shopping"></span></a></li>
+            <li><a href="encargos.html">Ver encargos<span class="fa-sharp fa-solid fa-gifts"></span></a></li>
+            <li><a href="volverseProveedor.html">Volverse proveedor<span class="fa-solid fa-user-tie"></span></a></li>
+            <li><a href="modifyPwd.html">Cambiar contraseña<span class="fa-sharp fa-solid fa-lock"></span></a></li>
+            <li><a href="modifyEmail.html">Cambiar correo<span class="fa-solid fa-envelope"></span></a></li>
+            <li><a href="favoritos.html">Favoritos<span class="fa-solid fa-heart" style="color: red;"></span></a></li>
+            <li id="LogOut"><a href="../../main.html">Cerrar sesión <span class="fa-solid fa-right-from-bracket"></span></a></li>
+        </ol>
+        <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+        </label>
+    </nav>
+    
+    <main>
+        <div class="column1" id="column1P" name="column1">
+            <a href=""><h1 class="anuncio1" id="anuncio1">Anuncio 1</h1></a>
+        </div>
+
+        <div class="column2" id="column2P" name="column2">
+            <a href=""><h1 class="anuncio2" id="anuncio2">Anuncio 2</h1></a>
+        </div>
+
+        <div class="content" id="contentP">
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerSection">
+            <section class="confeti">
+                <img src="../../Images/logo.png" alt="Logo Confeti" width="100" height="70">
+                <section>
+                    <h3>Confeti con-Fiesta</h3>
+                    <p>Al servicio de tus eventos</p>
+                </section>
+            </section>
+            <section class="contact">
+                <h3>Medios de contacto:</h3>
+                <ul>
+                    <li> <span class="fa-brands fa-whatsapp"></span><a href="https://api.whatsapp.com/send?phone=+529212989328&text=Hola, Necesito mas informacion!" target="none">921-298-9328</a></li>
+                    <li> <span class="fa-solid fa-envelope"></span><a href="mailto:confeti.confiesta00@gmail.com" target="none"> confeti.confiesta00@gmail.com </a></li>
+                </ul>
+            </section>
+            <section class="aboutUs">
+                <h3>Presentación</h3>
+                <ul>
+                    <li><a href="aboutUs.html">Misión y Visión</a></li>
+                    <li><a href="aboutUs.html">Politicas de privacidad</a></li>
+                    <li><a href="aboutUs.html">Terminos y condiciones</a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

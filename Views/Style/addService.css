@@ -1,0 +1,177 @@
+body{
+    background-image: url(https://images.pexels.com/photos/11832569/pexels-photo-11832569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size:cover;
+}
+main{
+    height: auto;
+}
+
+.RegistrarServicio{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    height: auto;
+}
+.form {
+    width: 580px;
+    height: auto;
+    border: 1px solid #101820;
+    border-radius: 6px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    background-color: #fff;
+    margin: 10px;
+    z-index: 0;
+} 
+.form-header {
+    background-color: #101820;
+    padding: 16px;
+    text-align: center;
+} 
+.form-header .text-header {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 800;
+} 
+.form-body {
+    padding: 16px;
+    display: flex;
+}
+
+.Perfil label,
+.registro label,
+.tableServ label,
+#Tags label{
+    display: block;
+    font-size: 14px;
+    color: #101820;
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-right: 3px;
+}
+
+.Perfil{
+    display: flex;
+    flex-direction: row;
+}
+.Perfil input[type="file"]{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #101820;
+    border-radius: 5px;
+    width: auto;
+    cursor: pointer;
+}
+
+.registro input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #101820;
+    border-radius: 4px;
+    color: #101820;
+    font-weight:bold;
+}
+#descripcion{
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #101820;
+    border-radius: 4px;
+    color: #101820;
+    line-height: 1.35;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    text-align: justify;
+}
+.registro input[type="number"],
+.tableServ input[type="number"] {
+    width: 20%;
+    font-size: 14px;
+    border: 1px solid #101820;
+    border-radius: 4px;
+    color: #101820;
+}
+
+/*Tiempos de entrega y cancelación*/
+#times{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Precio-cantidad-unidad*/
+.tableServ{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+.tableServ option, select{
+    color: #101820;
+}
+
+/*Tags*/
+#Tags{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-top: 2%;
+}
+#Tags span{
+    color: #101820;
+    font-size: 20px;
+}
+#Tags button{
+    padding: 0% 2%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+#titleTag{
+    display: flex;
+    flex-direction: row;
+}
+#Tags input[type="text"]{
+    width: 150px;
+    height: 25px;
+    font-size: 15px;
+    color: #101820;
+    margin-top: 1%;
+}
+#Tags input[type="text"]::after{
+    max-width: 150px;
+    max-height: 25px;
+    max-block-size: initial;
+    font-size: 15px;
+    color: #101820;
+    margin-top: 1%;
+}
+#Tags li, option, select{
+    max-width: 150px;
+    max-height: 25px;
+    max-block-size: initial;
+    font-size: 15px;
+    color: #101820;
+}
+
+.registrar{
+    display: flex;
+    justify-content: center;
+}
+
+.btnAddServ{
+    font-size: 15px;
+    margin-top: 2%;
+    color: #fff;
+    background: #85714D;
+    padding: 1% 5%;
+    border: none;
+    cursor: pointer;
+}
+.btnAddServ:hover{
+    transform: scale(1.2);
+}

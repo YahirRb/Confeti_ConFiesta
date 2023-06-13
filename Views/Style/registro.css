@@ -1,0 +1,174 @@
+body{
+    background-image: url(https://images.pexels.com/photos/11832569/pexels-photo-11832569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+main{
+    z-index: -1;
+    padding: 0% 0% 30% 0%;
+}
+.content{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    height: auto;
+}
+
+.form {
+    width: 350px;
+    border: 1px solid #101820;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    background-color: #fff;
+    margin: 10px;
+    z-index: 0;
+} 
+.form-header {
+    background-color: #101820;
+    padding: 16px;
+    text-align: center;
+} 
+.form-header .text-header {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+} 
+.form-body {
+    padding: 16px;
+}
+.elemento {
+    margin-bottom: 10px;
+}
+.elemento label {
+    display: block;
+    font-size: 14px;
+    color: #101820;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.elemento input[type="text"],
+.elemento input[type="email"],
+.elemento input[type="password"],
+.elemento input[type="tel"],
+.elemento input[type="number"],
+.elemento select,
+.elemento option,
+.elemento input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #101820;
+    border-radius: 4px;
+    color: #101820;
+} 
+.btnForm{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.btnSignIn {
+    padding: 12px 24px;
+    margin-left: 13px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #85714D;
+    color: #fff;
+    text-transform: capitalize;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer
+} 
+.btnSignIn:hover {
+    background-color: #85714D;
+    color: #fff;
+    transform: scale(1.05);
+}
+.btnForm a{
+    color: #101820;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: capitalize;
+    padding: 15px 0px 0px 0px;
+}
+
+/*Radio button proveedor*/
+
+.rbUserType{
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    padding: 0% 0% 4% 0%;
+}
+.btn {
+    border: 3px solid #1a1a1a;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    transition: background 600ms ease, color 600ms ease;
+}  
+input[type=radio].toggle {
+    display: none;
+}
+input[type=radio].toggle + label {
+    cursor: pointer;
+    min-width: 60px;
+}
+input[type=radio].toggle + label:hover {
+    background: none;
+    color: #1a1a1a;
+}
+input[type=radio].toggle + label:after {
+    background: #1a1a1a;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+    width: 100%;
+    z-index: -1;
+}
+input[type=radio].toggle.toggle-left + label {
+    border-right: 0;
+}
+input[type=radio].toggle.toggle-left + label:after {
+    left: 100%;
+}
+input[type=radio].toggle.toggle-right + label {
+    margin-left: -5px;
+}
+input[type=radio].toggle.toggle-right + label:after {
+    left: -100%;
+}
+input[type=radio].toggle:checked + label {
+    cursor: default;
+    color: #fff;
+    transition: color 200ms;
+}
+input[type=radio].toggle:checked + label:after {
+    left: 0;
+}
+
+
+.profilePhoto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+.avatar {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(23, 111, 211);
+    border-radius: 50%;
+    align-self: center;
+    padding: 6px;
+    cursor: pointer;
+    box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.015),100px 100px 80px rgba(0, 0, 0, 0.03);
+}
+#file {
+    display: none;
+}
